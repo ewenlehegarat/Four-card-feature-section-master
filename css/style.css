@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+    min-height: 100vh;
+}
+
+header{
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+}
+
+h1{
+    opacity: 60%;
+    font-weight: 200;
+    font-size: 40px;
+    margin-top: 75px;
+}
+
+h2{
+    font-size: 40px;
+    opacity: 70%;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 60%;
+}
+
+h4{
+    color: hsl(234, 12%, 34%);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p{
+    color: hsl(212, 6%, 44%);
+    font-size: 13px;
+}
+
+.super, .team, .karma, .calcul{
+    width: 350px;
+    height: 250px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px rgb(202, 197, 197);
+    padding:  35px;
+}
+
+.super{
+    border-top: 4px hsl(180, 62%, 55%) solid;
+}
+
+.team{
+    border-top: 4px hsl(0, 78%, 62%) solid;
+}
+
+.karma{
+    border-top: 4px hsl(34, 97%, 64%) solid;
+    margin-top: 30px;
+}
+
+.calcul{
+    border-top: 4px hsl(212, 86%, 64%) solid;
+}
+
+.center{
+    transform: translateY(-125px);
+}
+
+img{
+    float: right;
+    margin-top: 40px;
+}
