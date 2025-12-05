@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Grey-500: hsl(234, 12%, 34%);
+    --Grey-400: hsl(212, 6%, 44%);
+    --White: hsl(0, 0%, 100%);
+}
+
 body{
     font-family: 'Poppins';
     min-height: 100vh;
@@ -24,7 +34,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 200px 0;
+    margin: 100px 0;
     gap: 30px;
 }
 
@@ -49,13 +59,13 @@ h3{
 }
 
 h4{
-    color: hsl(234, 12%, 34%);
+    color: var(--Grey-500);
     font-size: 20px;
     font-weight: 600;
 }
 
 p{
-    color: hsl(212, 6%, 44%);
+    color: var(--Grey-400);
     font-size: 13px;
 }
 
@@ -69,19 +79,19 @@ p{
 }
 
 .super{
-    border-color: hsl(180, 62%, 55%);
+    border-color: var(--Cyan);
 }
 
 .team{
-    border-color: hsl(0, 78%, 62%);
+    border-color: var(--Red);
 }
 
 .karma{
-    border-color: hsl(34, 97%, 64%);
+    border-color: var(--Orange);
 }
 
 .calcul{
-    border-color: hsl(212, 86%, 64%);
+    border-color: var(--Blue);
 }
 
 .center{
@@ -94,7 +104,7 @@ p{
 
 img{
     float: right;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 1150px){
