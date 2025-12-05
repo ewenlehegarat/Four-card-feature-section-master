@@ -9,21 +9,22 @@
 body{
     font-family: 'Poppins';
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 header{
     text-align: center;
+    width: 550px;
 }
 
-.main{
+main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
-}
-
-.container{
-    display: flex;
+    margin: 200px 0;
     gap: 30px;
 }
 
@@ -61,34 +62,55 @@ p{
 .super, .team, .karma, .calcul{
     width: 350px;
     height: 250px;
-    margin-top: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 15px rgb(202, 197, 197);
-    padding:  35px;
+    padding: 35px;
+    border-top: 4px solid;
 }
 
 .super{
-    border-top: 4px hsl(180, 62%, 55%) solid;
+    border-color: hsl(180, 62%, 55%);
 }
 
 .team{
-    border-top: 4px hsl(0, 78%, 62%) solid;
+    border-color: hsl(0, 78%, 62%);
 }
 
 .karma{
-    border-top: 4px hsl(34, 97%, 64%) solid;
-    margin-top: 30px;
+    border-color: hsl(34, 97%, 64%);
 }
 
 .calcul{
-    border-top: 4px hsl(212, 86%, 64%) solid;
+    border-color: hsl(212, 86%, 64%);
 }
 
 .center{
-    transform: translateY(-125px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 img{
     float: right;
     margin-top: 40px;
+}
+
+@media screen and (max-width: 1150px){
+    header{
+        width: 340px;
+    }
+    main{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .super, .team, .karma, .calcul{
+        width: 310px;
+    }
 }
